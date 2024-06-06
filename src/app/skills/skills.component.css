@@ -1,0 +1,97 @@
+.ftco-section {
+  padding: 3em 0;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.skills-header {
+  color: #ffbd39;
+}
+
+@keyframes prog {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate {
+  animation: prog 4s linear;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.progress-bar {
+  background: #ffbd39;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.tech-icons {
+  border: 1.7px solid #ffffff !important;
+  border-radius: 5px !important;
+  /*box-shadow: 3px 3px 2px 2px #adacac !important;*/
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  text-align: center !important;
+
+}
+
+.tech-icons:hover {
+  border: 2px solid #ffbd39 !important;
+  transform: scale(1.09) !important;
+  transition: all 1s ease-in-out !important;
+}
+
+.language-div {
+  border-radius: 4px !important;
+  /*box-shadow: 3px 3px 2px 2px #adacac !important;*/
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  text-align: center !important;
+  background: transparent !important;
+  border: 2px solid white;
+  -webkit-box-shadow: 0px 20px 69px -27px rgba(255, 255, 255, 0.17) !important;
+  -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17) !important;
+  box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17) !important;
+}
+
+.language-div:hover {
+  background-color: #ffbd39 !important;
+  color: black;
+}
+
+.language-div:hover .paragraph:after {
+  background: #000000 !important;
+}
+
+.language-div:hover svg path {
+  fill: #000000 !important;
+}
+
+.paragraph {
+  position: relative;
+}
+
+.paragraph:after {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  content: '';
+  width: 15%;
+  height: 3px;
+  background: #ffbd39;
+  margin: 0 auto;
+}

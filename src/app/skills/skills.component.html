@@ -1,0 +1,95 @@
+<section class="ftco-section text-white " id="skills-section">
+  <div class="container ">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-12 heading-section text-center">
+        <div
+          class="w-100 d-flex flex-row justify-content-start px-2 p-sm-0 justify-content-center mb-5"
+          data-aos="fade-up">
+          <h1 class="skills-header ">Skills</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-12">
+        <h3 class="text-center ">Professional <strong class="text-warning">Technologies:</strong></h3>
+      </div>
+      <div
+        class="col-12 px-5 py-3 p-sm-4 px-md-2 py-md-4 px-lg-2 py-lg-4 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        *ngFor="let framwork of frameworks"
+      >
+        <div>
+
+        </div>
+        <div class="tech-icons w-100 h-100 shadow-lg"
+             data-aos="flip-left"
+        >
+          <svg stroke="white" fill="#ffbd39" stroke-width="0" role="img" viewBox="0 0 32 32" height="1em" width="1em"
+               xmlns="http://www.w3.org/2000/svg"><title></title>
+            <path [attr.d]="framwork.path"
+                  [ngStyle]="{'fill':framwork.fillColor}"
+            >
+            </path>
+          </svg>
+          <p style="font-size: 18px;">{{ framwork.name }}</p>
+        </div>
+      </div>
+    </div>
+    <!--    languages -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h3 class="text-center ">Programming <strong class="text-warning">Languages:</strong></h3>
+      </div>
+      <div
+        class="col-12 px-5 py-3 p-sm-4 px-md-2 py-md-4 px-lg-2 py-lg-4 col-sm-6  col-lg-4 d-flex justify-content-center align-items-center"
+        *ngFor="let language of languages;let ind=index"
+      >
+        <div>
+
+        </div>
+        <div class="language-div w-100 h-100"
+             data-aos="flip-right"
+             data-aos-delay="10"
+
+        >
+          <svg stroke="white" fill="#ffbd39" stroke-width="0" role="img" viewBox="0 0 32 32" height="1em" width="1em"
+               xmlns="http://www.w3.org/2000/svg"><title></title>
+            <path [attr.d]="language.path"
+                  [ngStyle]="{'fill':language.fillColor}"
+            >
+            </path>
+          </svg>
+          <p class="paragraph text-white" style="font-size: 18px;">{{ language.name }}</p>
+        </div>
+      </div>
+    </div>
+    <!--    tools I use  -->
+    <div class="row mb-5 justify-content-center">
+      <div class="col-12 justify-content-center">
+        <h3 class="text-center "><strong class="text-warning">Tools </strong> I use:</h3>
+      </div>
+      <div
+        class="col-12 px-5 py-3 p-sm-4 px-md-2 py-md-4 px-lg-2 py-lg-4 col-sm-6  col-lg-3 d-flex justify-content-center align-items-center"
+        *ngFor="let tool of tools;let ind=index"
+      >
+        <div>
+
+        </div>
+        <div class="language-div w-100 h-100"
+             data-aos="flip-right"
+             data-aos-delay="10"
+
+        >
+          <svg stroke="white" fill="#ffbd39" stroke-width="0" role="img" viewBox="0 0 32 32" height="1em" width="1em"
+               xmlns="http://www.w3.org/2000/svg"><title></title>
+            <path [attr.d]="tool.path"
+                  [ngStyle]="{'fill':tool.fillColor}"
+                  style="width: 100%;height: 100%"
+            >
+            </path>
+          </svg>
+          <p class="paragraph text-white" style="font-size: 18px;">{{ tool.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

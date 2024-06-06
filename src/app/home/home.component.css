@@ -1,0 +1,85 @@
+section{
+  height: 95vh !important;
+  filter: drop-shadow(2px 2px 2px rgb(0,0,0,0.5));
+  overflow: hidden !important;
+  /*border-bottom: 1px solid #ffbd39;*/
+}
+#one{
+  background-image: url("C:/_MesFichiers/AHMED_@2023/Resume_CV/My_Portfolio/src/assets/my_fav_pic/pic2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-position: center -190px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+#one::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 1; /* Ensures the overlay is above the background image */
+}
+h1 span{
+  color: #ffbd39;
+}
+.container {
+  position: relative; /* Ensures the text remains on top of the overlay */
+  z-index: 2; /* Ensures the text is above the overlay */
+}
+.fs-1{
+  font-size: 50px !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .fs-1{
+    font-size: 30px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .fs-1{
+    font-size: 40px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .fs-1{
+    font-size: 45px !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {*/
+/*  .fs-1{*/
+/*    font-size: 50px !important;*/
+/*  }*/
+/*}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .fs-1{
+    font-size: 50px !important;
+  }
+}
+@keyframes rotate-wave {
+  0% {
+    transform: rotate(-15deg)
+  }
+  100% {
+    transform: rotate(10deg)
+  }
+}
+
+p span {
+  display: inline-block;
+  transform-origin: right bottom;
+  animation: rotate-wave .8s ease-out infinite alternate-reverse; /* Apply the animation to the .wave elements */
+}

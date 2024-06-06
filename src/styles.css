@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+*{
+  font-family: "Roboto Slab", serif;
+  /*font-family: "Poppins", sans-serif;*/
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header-back ,.about-header,.skills-header,.resume-header,.portfolio-header{
+  position: relative;
+  z-index: 0;
+  width: fit-content;
+  font-weight: 900;
+  border: 0 solid white;
+  border-top-width:2px ;
+  padding-block: 20px;
+  color: #ffbd39;
+}
+.header-back::after{
+  content: "CONTACT";
+  position: absolute;
+  color: rgb(255,255,255,0.15);
+  font-size: 1.2em;
+  font-weight: bolder;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,0%);
+   z-index: -1;
+}
+.about-header::after{
+  content: "ABOUT";
+  position: absolute;
+  color: rgb(255,255,255,0.15);
+  font-size: 1.2em;
+  font-weight: bolder;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: -1;
+}
+.skills-header::after{
+  content: "SKILLS";
+  position: absolute;
+  color: rgb(255,255,255,0.15);
+  font-size: 1.2em;
+  font-weight: bolder;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: -1;
+}
+.resume-header::after{
+  content: "RESUME";
+  position: absolute;
+  color: rgb(255,255,255,0.15);
+  font-size: 1.2em;
+  font-weight: bolder;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: -1;
+}
+
+.portfolio-header::after{
+  content: "Projects:";
+  position: absolute;
+  color: rgb(255,255,255,0.15);
+  font-size: 1.2em;
+  font-weight: bolder;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  z-index: -1;
+}
+section{
+  background-color: transparent !important; ;
+}
+
+body{
+  background-color: black !important;
+}

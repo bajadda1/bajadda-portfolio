@@ -1,0 +1,31 @@
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="">
+
+  <footer class="text-center text-white bg-dark">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0 ">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <ng-container *ngFor="let soc of social" class="one">
+          <a class="social btn btn-outline-warning btn-floating m-1"
+             [href]="soc.url" role="button"
+             target="_blank"
+          ><i [class]="soc.icon"></i
+          ></a>
+        </ng-container>
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © {{ date | date: 'yyyy' }} Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">bajadda.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->
