@@ -7,7 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PortfolioComponent implements OnInit{
 
-  myProjects!:Array<{id:number,imgSrc:string,name:string,date:Date,description:string,url:string,github:string} >
+  myProjects!:Array<{id:number,imgSrc:string,name:string,date:Date,description:string,url:string,github:string} >;
+  currentProject!:{id:number,imgSrc:string,name:string,date:Date,description:string,url:string,github:string};
 
   ngOnInit(): void {
     this.myProjects=[
@@ -113,5 +114,18 @@ export class PortfolioComponent implements OnInit{
 
 
     ]
+  }
+
+  logCurrentProject(project: {
+    id: number;
+    imgSrc: string;
+    name: string;
+    date: Date;
+    description: string;
+    url: string;
+    github: string
+  }) {
+    this.currentProject=project;
+    console.log(this.currentProject);
   }
 }

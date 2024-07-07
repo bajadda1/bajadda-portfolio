@@ -17,7 +17,7 @@ section{
 input,textarea{
   border-color:rgb(255,255,255,0.5);
   border-width: 2px;
-  border-radius: 0%;
+  border-radius: 0;
   margin-block: 20px;
   color: rgb(255,255,255,0.5);
   background-color: transparent;
@@ -54,8 +54,8 @@ p i{
 }
 i::after{
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: #ffbd39 solid 2px;
   position: absolute;

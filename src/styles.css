@@ -2,10 +2,10 @@
 @import url("bootstrap-icons/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 *{
-  font-family: "Roboto Slab", serif;
-  /*font-family: "Poppins", sans-serif;*/
+  /*font-family: "Roboto Slab", serif;*/
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  /*font-style: normal;*/
 }
 .header-back ,.about-header,.skills-header,.resume-header,.portfolio-header{
   position: relative;

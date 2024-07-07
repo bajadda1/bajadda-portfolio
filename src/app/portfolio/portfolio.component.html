@@ -1,4 +1,4 @@
-<section class="w-100 ">
+<section class="w-100">
   <div class="container w-100">
     <div class="w-100 d-flex flex-row justify-content-center py-5 text-white">
       <h1 class="portfolio-header"
@@ -7,11 +7,40 @@
     <div class="row justify-content-center p-0 m-0 ">
       <div *ngFor="let project of myProjects;let ind=index"
            data-aos="zoom-in"
-      class="col-12 px-5 py-3 p-sm-2 px-md-2 py-md-2 p-lg-2 col-sm-6 col-md-4 col-lg-3
-        position-relative shadow-lg">
+
+      class="col-12 px-5 py-3 p-sm-2 px-md-2 py-md-2 py-lg-3 px-lg-2 col-sm-6 col-md-4 col-lg-3
+        position-relative shadow-lg"
+
+           data-bs-toggle="modal"
+           data-bs-target="#exampleModal"
+      (click)="logCurrentProject(project)">
         <app-projects [projectInfo]="project" ></app-projects>
       </div>
     </div>
   </div>
 
+</section>
+<section class="" *ngIf="currentProject">
+  <!-- Modal -->
+  <div class="modal fade w-100 h-100" id="exampleModal"
+       style="background-color: rgb(0,0,0,0.8) !important;"
+       tabindex="-1"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true"
+       >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">{{currentProject.name}}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <app-projects [projectInfo]="currentProject"></app-projects>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

@@ -33,7 +33,9 @@
 }
 .main-div{
   overflow: hidden;
-  box-shadow: 2px 2px 4px  white,-2px -2px 4px white;
+  /*box-shadow: 2px 2px 4px  #ffbd39,*/
+  /*-2px -2px 4px #ffbd39;*/
+  border: 3px solid white;
 }
 .main-div:hover img{
   transform: scale(1.05);

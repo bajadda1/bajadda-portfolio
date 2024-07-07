@@ -8,14 +8,14 @@
         </h1>
       </div>
       <div class="col-lg-6">
-        <h3 class="resume-title">
+        <h4 class="resume-title">
           <i class="bi bi-mortarboard text-warning"></i>
-          Education</h3>
+          Education</h4>
         <div
           class="resume-item"
           *ngFor="let edu of education"
         >
-          <h4> {{edu.school}}</h4>
+          <h5 class="fw-bolder "> {{edu.school}}</h5>
           <div class="px-3">
             <h5>
               <i class="bi bi-star-half p-2 text-warning"></i>{{ edu.year }}
@@ -27,9 +27,9 @@
 
       </div>
       <div class="col-lg-6">
-        <h3 class="resume-title"> <i class="bi bi-stars text-warning"></i> Professional Experience</h3>
+        <h4 class="resume-title"> <i class="bi bi-stars text-warning"></i> Professional Experience</h4>
         <div class="resume-item" *ngFor="let experience of experiences">
-          <h4>{{ experience.title }}</h4>
+          <h5 class="fw-bolder ">{{ experience.title }}</h5>
           <h5>
             <i class="bi bi-star-half p-2 text-warning"></i>startup : {{experience.startup}}</h5>
           <h5>
@@ -52,7 +52,7 @@
       </div>
       <div class="col-12 d-flex justify-content-center ">
         <p
-          data-aos="fade-up"><a href="assets/my_fav_pic/ahmed_resume.pdf"
+          data-aos="fade-up"><a href="assets/my_fav_pic/BAJADDA_Ahmed_CV.pdf"
                                 target="_blank"
                                 class="btn btn-outline-danger py-3 px-md-5 px-3 ">Download CV
           <i class="bi bi-box-arrow-in-down-right"></i></a></p>
